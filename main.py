@@ -4,6 +4,7 @@ import re
    
    
 my_url = 'https://krisha.kz/prodazha/kvartiry/talgar/?page=1'
+# here I could use for loop instead of changing pages from 1 to 2 and so on ,but it took too long ,so I created 16 csvs and then added them in one csv
 uclient = uReq(my_url)
 page_html = uclient.read()
 uclient.close()
